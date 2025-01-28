@@ -1,0 +1,78 @@
+
+-- BACKEND V2 --
+
+backend/
+    pom.xml
+    src/
+        main/
+            java/
+                com/
+                    iseek/
+                        Application.java
+                        CochraneScraper.java
+                        DataStorage.java
+                        ReviewController.java
+                        ReviewMetadata.java
+                        ReviewsService.java
+                        service/
+        resources/
+            application.properties
+        test/
+            java/
+                com/
+                    iseek/
+                        ReviewsController.java
+                        ReviewsService.java
+    target(after build)/
+        my-project-1.0-SNAPSHOT.jar
+        my-project-1.0-SNAPSHOT.jar.original
+        classes/
+            com/
+                iseek/
+                    Application.class
+                    CochraneScraper.class
+                    DataStorage.class
+                    HttpClient.class
+                    ReviewController.class
+                    ReviewMetadata.class
+                    ReviewsService.class
+        generated-sources/
+        generated-test-sources/
+        maven-archiver/
+        maven-status/
+        test-classes/
+
+-- V1 --
+Cochrane/
+├── backend/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   ├── com/iseek/
+│   │   │   │   │   ├── CochraneScraper.java         # Scrapes data from Cochrane Library
+│   │   │   │   │   ├── ReviewMetadata.java         # POJO for review metadata
+│   │   │   │   │   ├── DataStorage.java            # Handles file storage for JSON data
+│   │   │   │   │   ├── ReviewController.java       # REST API for reviews
+│   │   │   │   │   └── Application.java            # Main Spring Boot application entry point
+│   │   └── resources/
+│   │       ├── application.properties              # Spring Boot configuration
+│   │       └── cochrane_reviews.json               # Pre-scraped review data
+│   ├── pom.xml                                      # Maven configuration file
+│   └── README.md                                    # Instructions/documentation for the backend
+├── frontend/
+│   ├── public/
+│   │   └── index.html                               # Main HTML file for the React app
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Header.jsx                           # Header component
+│   │   │   ├── ReviewList.jsx                       # Component for listing reviews
+│   │   │   ├── SearchBar.jsx                        # Search bar component
+│   │   │   └── ReviewCard.jsx                       # Card component for individual reviews
+│   │   ├── pages/
+│   │   │   └── Home.jsx                             # Main page of the app
+│   │   ├── services/
+│   │   │   └── api.js                               # API service for fetching data from the backend
+│   │   ├── App.jsx                                  # Main React component
+│   │   └── index.jsx                                # React entry point
+│   ├── package.json                                 # Node.js dependencies
+│   └── README.md                                    # Instructions/documentation for the frontend
