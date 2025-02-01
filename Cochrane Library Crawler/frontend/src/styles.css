@@ -1,0 +1,95 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/* delete later! */
+h1{
+	color: red;
+	background: black;
+}
+/* Root container */
+#root {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Search box */
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-box {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #962d91;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Auto-suggestions */
+.suggestions {
+    position: absolute;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.suggestions div {
+    padding: 10px;
+    cursor: pointer;
+    color: blue;
+}
+
+.suggestions div:hover {
+    background: #f0f0f0;
+}
+
+/* Review List */
+.review-container {
+    max-width: 800px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.review-card {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.review-title a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.review-title a:hover {
+    text-decoration: underline;
+}
+
+.review-meta {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .review-container {
+        padding: 10px;
+    }
+}
